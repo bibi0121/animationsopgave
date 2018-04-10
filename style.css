@@ -1,0 +1,237 @@
+body {
+    background-color: #b5e8f8;
+}
+
+nav {
+
+    position: absolute;
+    left: 45vw;
+    top: 20vw;
+    font-size: 4em;
+    font-family: "open sans";
+    text-align: center;
+
+}
+
+h1 {
+    font-family: "open sans";
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "open sans";
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "open sans";
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+p {
+    font-family: "open sans";
+    font-size: 1em;
+    font-weight: lighter
+}
+
+img {
+    width: 60vw;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionwrapper .column {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+    box-shadow: 5px 5px;
+    border: 1px solid;
+
+    margin: 10px;
+    text-align: center;
+}
+
+.sectionwrapper .column_1 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+}
+
+.sectionwrapper .column_2 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.sectionwrapper .column_3 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+
+/*Animationen*/
+
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+#baggrund {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(Baggrund.png);
+
+    background-size: 100%;
+
+}
+
+#midtergrund {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(Midtergrund.png);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0vw;
+
+}
+
+#forgrund {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(Forgrund.png);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0vw;
+    z-index: 1;
+
+}
+
+#skyer {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(skyer.png);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0vw;
+    z-index: 1;
+    animation-name: skyer;
+    animation-duration: 100s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes skyer {
+    from {}
+    to {
+        transform: translateX(30vw);
+
+    }
+}
+
+
+#dreng {
+    width: 7.1vw;
+    height: 11.8vw;
+    background-image: url(animationsdreng.png);
+    background-size: 100%;
+    position: absolute;
+    bottom: 22.94vw;
+    left: 5vw;
+    animation-name: dreng;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+@keyframes dreng {
+    from {}
+    to {
+        transform: translateX(40vw);
+
+    }
+}
+
+#bjoern {
+    width: 10vw;
+    height: 12vw;
+    background-image: url(Bj%C3%B8rn.png);
+    background-size: 100%;
+    position: absolute;
+    bottom: 22.94vw;
+    left: 0vw;
+    animation-name: bjoern;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes bjoern {
+    from {}
+    to {
+        transform: translateX(40vw);
+
+    }
+}
+
+
+/*Forsiden*/
+
+.column_content {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.column_content .animation {
+    font-family: "open sans";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.column_content .styletile {
+    font-family: "open sans";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.column_content1 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+}
+
+.column_content1 img {
+    width: 70%;
+}
