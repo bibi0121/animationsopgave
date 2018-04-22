@@ -146,4 +146,12 @@ img {
     width: 70%;
 }
 
-
+.column_sekvens {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+    text-align: center;
+}
