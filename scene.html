@@ -4,24 +4,99 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animationsopgave</title>
+    <title>opgave_02_02_02</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 
-<div id="scene">
-    <div id="baggrund"></div>
-    <div id="midtergrund"></div>
-    <div id="forgrund"></div>
-    <div id="dreng"></div>
-    <div id="bjoern"></div>
-    <div id="skyer"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Forsiden</a></li>
+                <li><a href="scene.html#scene">Animation</a></li>
+                <li> <a href="sekvensdiagram.html#sekvensdiagram">Flowchart og sekvens</a>
+                </li>
+
+
+                <li> <a href="styletile.html#styletile">Styletile</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-----Knapper------>
+    <!--
+
+
+    <button id="startHistorie">startHistorie</button>
+
+    <button id="mandSaetterSig">mandSaetterSig</button>
+
+    <button id="bjornKommerInd">bjornKommerInd</button>
+
+    <button id="mandSerBjornen">mandSerBjornen</button>
+
+    <button id="samlerOp">samlerOp</button>
+
+    <button id="mandSlipperVaek">mandSlipperVaek</button>
+
+-->
 
 
 
-</div>
+
+    <!------------- Scene ------------>
+    <div id="scene">
+        <div id="baggrund"></div>
+        <div id="mellemgrund"></div>
+        <div id="forgrund"></div>
+        <div id="skyer"></div>
+        <div id="traestamme"></div>
+        <div id="sten_1"></div>
+        <div id="sten_2"></div>
+        <div id="sten_3"></div>
+        <div id="sten_4"></div>
+        <div id="sten_5"></div>
+    </div>
+
+
+
+    <!--- karakterene --->
+
+    <div id="man_container">
+        <div id="man_sprite"></div>
+    </div>
+
+
+    <div id="bear_container">
+        <div id="bear_sprite"></div>
+    </div>
+
+
+
+
+    <!------------- Lyd ------------>
+
+    <audio id="baggrundslyd" src="baggrundslyd.mp3"></audio>
+
+    <audio id="fodtrin" src="fodtrin.mp3"></audio>
+
+    <audio id="buske_lyd" src="buske.mp3"></audio>
+
+    <audio id="broel" src="broel.mp3"></audio>
+
+    <audio id="skriger" src="mand-skriger_01.mp3"></audio>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="javascript.js"></script>
+
 
 </body>
 

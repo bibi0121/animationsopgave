@@ -1,17 +1,37 @@
 body {
-    background-color: #b5e8f8;
+    background-color: rgb(192, 247, 211);
 }
 
-nav {
 
-    position: absolute;
-    left: 45vw;
-    top: 20vw;
-    font-size: 4em;
-    font-family: "open sans";
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(0, 96, 11);
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding-left: 100px;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: #ffffff;
     text-align: center;
-
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px
 }
+
+li a:hover {
+    background-color: rgba(14, 80, 34, 0.58);
+}
+
 
 h1 {
     font-family: "open sans";
@@ -40,112 +60,141 @@ p {
     font-weight: lighter
 }
 
-img {
-    width: 60vw;
+
+body {
+    padding: 0;
+    margin: 0;
 }
-
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.sectionwrapper .column {
-    flex-grow: 1;
-    flex-basis: 200px;
-    padding: 20px;
-    box-shadow: 5px 5px;
-    border: 1px solid;
-
-    margin: 10px;
-    text-align: center;
-}
-
-.sectionwrapper .column_1 {
-    flex-grow: 1;
-    flex-basis: 200px;
-    padding: 20px;
-
-    border: 1px solid;
-    box-shadow: 5px 5px;
-    margin: 10px;
-}
-
-.sectionwrapper .column_2 {
-    flex-grow: 1;
-    flex-basis: 200px;
-    padding: 20px;
-
-    border: 1px solid;
-    box-shadow: 5px 5px;
-    margin: 10px;
-    text-align: center;
-
-}
-
-.sectionwrapper .column_3 {
-    flex-grow: 1;
-    flex-basis: 200px;
-    padding: 20px;
-    border: 1px solid;
-    box-shadow: 5px 5px;
-    margin: 10px;
-    text-align: center;
-}
-
-
-
-
-/*Animationen*/
 
 #scene {
-    width: 100vw;
-    height: 56.25vw;
     position: relative;
+    width: 100vw;
+    height: 52vw;
+    overflow: hidden;
+
 }
 
 #baggrund {
     width: 100vw;
-    height: 56.25vw;
+    height: 52vw;
     background-image: url(Baggrund.png);
-
-    background-size: 100%;
-
-}
-
-#midtergrund {
-    width: 100vw;
-    height: 56.25vw;
-    background-image: url(Midtergrund.png);
     background-size: 100%;
     position: absolute;
     bottom: 0vw;
+    z-index: 1;
+}
+
+
+#mellemgrund {
+    width: 100vw;
+    height: 52vw;
+    background-image: url(mellemgrund.png);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0vw;
+    z-index: 2;
 
 }
 
 #forgrund {
     width: 100vw;
-    height: 56.25vw;
+    height: 52vw;
     background-image: url(Forgrund.png);
     background-size: 100%;
     position: absolute;
     bottom: 0vw;
-    z-index: 1;
+    z-index: 10;
 
 }
 
 #skyer {
     width: 100vw;
-    height: 56.25vw;
+    height: 52vw;
     background-image: url(skyer.png);
     background-size: 100%;
     position: absolute;
     bottom: 0vw;
     z-index: 1;
     animation-name: skyer;
-    animation-duration: 100s;
+    animation-duration: 60s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }
+
+#sten {
+    width: 20vw;
+    height: 11.24vw;
+    background-image: url(billeder/sten.svg);
+    background-size: 100%;
+    position: absolute;
+    z-index: 8;
+    bottom: 9.5vw;
+    left: 25vw;
+}
+
+#sten_2 {
+    width: 20vw;
+    height: 11.24vw;
+    background-image: url(billeder/sten_2.svg);
+    background-size: 100%;
+    position: absolute;
+    z-index: 8;
+    bottom: 14vw;
+    left: 30vw;
+
+}
+
+
+#sten_3 {
+    width: 20vw;
+    height: 11.24vw;
+    background-image: url(billeder/sten_2.svg);
+    background-size: 100%;
+    position: absolute;
+    z-index: 8;
+    bottom: 12vw;
+    left: 60vw;
+
+}
+
+#sten_4 {
+    width: 20vw;
+    height: 11.24vw;
+    background-image: url(billeder/sten_2.svg);
+    background-size: 100%;
+    position: absolute;
+    z-index: 8;
+    bottom: 12vw;
+    left: 80vw;
+
+}
+
+#sten_5 {
+    width: 20vw;
+    height: 11.24vw;
+    background-image: url(billeder/sten_5.svg);
+    background-size: 100%;
+    position: absolute;
+    z-index: 8;
+    bottom: 14.3vw;
+    left: 33.5vw;
+
+}
+
+
+#traestamme {
+    width: 20vw;
+    height: 11.24vw;
+    background-image: url(billeder/tr%C3%A6stamme.svg);
+    background-size: 100%;
+    position: absolute;
+    z-index: 8;
+    bottom: 14.5vw;
+    left: 37vw;
+    transform: scale(2.5);
+
+}
+
 
 @keyframes skyer {
     from {}
@@ -155,83 +204,259 @@ img {
     }
 }
 
+/**************************LYDE**************************/
 
-#dreng {
-    width: 7.1vw;
-    height: 11.8vw;
-    background-image: url(animationsdreng.png);
-    background-size: 100%;
+/********************* Viser figurer ***********************/
+
+#man_container {
     position: absolute;
-    bottom: 22.94vw;
-    left: 5vw;
-    animation-name: dreng;
+    z-index: 9;
+    transform: scale(0.5);
+    top: 18vw;
+
+}
+
+.man_move_right {
+    animation-name: man_move_right_kf;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes man_move_right_kf {
+    from {
+        left: 0;
+    }
+    to {
+        left: 37vw;
+    }
+}
+
+
+#man_sprite {
+    background-image: url(Artboard%201.svg);
+    background-size: 800% 600%;
+    width: 20.5vw;
+    height: 28vw;
+}
+
+.man_walk {
+    animation-name: man_walk_kf;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(8);
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes man_walk_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -800% 0%;
+    }
+}
+
+
+
+.man_position_in {
+    left: 37vw;
+}
+
+
+.man_sit_down {
+    animation-name: man_sit_down_kf;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    transition-timing-function: steps(1);
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes man_sit_down_kf {
+    /*
+    0% {
+        background-position: -0% -100%;
+    }
+    100% {
+        background-position: -300% -100%;
+    }
+*/
+    background-position: -200% -100%;
+}
+
+/*
+.man_stand {
+    background-position: -400% -100%;
+}
+*/
+
+.man_turn {
+    animation-name: man_turn_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+    /*    animation-fill-mode: forwards;*/
+}
+
+@keyframes man_turn_kf {
+    0% {
+        background-position: 0% -200%;
+    }
+    100% {
+        background-position: -300% -200%;
+    }
+}
+
+.man_samler_op {
+    animation-name: man_samlerOp_kf;
     animation-duration: 5s;
     animation-iteration-count: 1;
-    animation-timing-function: linear;
-
+    animation-timing-function: steps(4);
 }
 
-@keyframes dreng {
-    from {}
-    to {
-        transform: translateX(40vw);
-
+@keyframes man_samlerOp_kf {
+    0% {
+        background-position: -0% -500%;
+    }
+    100% {
+        background-position: -400% -500%;
     }
 }
 
-#bjoern {
-    width: 10vw;
-    height: 12vw;
-    background-image: url(Bj%C3%B8rn.png);
-    background-size: 100%;
-    position: absolute;
-    bottom: 22.94vw;
-    left: 0vw;
-    animation-name: bjoern;
-    animation-duration: 20s;
+.samler_sten {
+    animation-name: samler_sten_kf;
+    animation-duration: 5s;
     animation-iteration-count: 1;
-    animation-timing-function: linear;
+    animation-timing-function: steps(4);
 }
 
-@keyframes bjoern {
-    from {}
-    to {
-        transform: translateX(40vw);
+@keyframes samler_sten_kf {
+    0% {
+        background-position: 0% -500%;
+    }
+    100% {
+        background-position: -400% -500%;
+    }
+}
 
+.kasterSten {
+    animation-name: kaster_sten_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+}
+
+@keyframes kaster_sten_kf {
+    0% {
+        background-position: 0% -600%;
+    }
+    100% {
+        background-position: -400% -600%;
+    }
+}
+
+.man_run_right {
+    animation-name: man_run_right_kf;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes man_run_right_kf {
+    from {
+        left: 37vw;
+    }
+    to {
+        right: 50vw;
+    }
+}
+
+.man_run {
+    animation-name: man_run_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(5);
+}
+
+@keyframes man_run_kf {
+    0% {
+        background-position: -0% -400%;
+    }
+    100% {
+        background-position: -500% -400%;
+    }
+}
+
+.bliverFanget {}
+
+
+/***bjørnen***/
+
+#bear_container {
+    position: absolute;
+    transform: scale(0.8);
+    z-index: 9;
+    top: 15vw;
+    left: -10vw;
+}
+
+#bear_sprite {
+    background-image: url(bjorne_spritesheet.svg);
+    background-size: 700% 200%;
+    width: 20vw;
+    height: 27vw;
+
+}
+
+.bear_move_right {
+    animation-name: bear_move_right_kf;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes bear_move_right_kf {
+    from {
+        left: -20vw;
+    }
+    to {
+        left: 20vw;
     }
 }
 
 
-/*Forsiden*/
-
-.column_content {
-    flex-grow: 1;
-    flex-basis: 200px;
-    padding: 20px;
-    border: 1px solid;
-    box-shadow: 5px 5px;
-    margin: 10px;
-    text-align: center;
+.bear_walk {
+    animation-name: bear_walk_kf;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(6);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
-.column_content .animation {
-    font-family: "open sans";
-    font-weight: bold;
-    font-size: 1.5em;
+@keyframes bear_walk_kf {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: -600% 0%;
+    }
 }
 
-.column_content .styletile {
-    font-family: "open sans";
-    font-weight: bold;
-    font-size: 1.5em;
+.puls {
+    animation: puls_kf 0.5s infinite alternate linear;
 }
 
-.column_content1 {
-    flex-grow: 1;
-    flex-basis: 200px;
-    text-align: center;
-}
-
-.column_content1 img {
-    width: 70%;
+@keyframes puls_kf {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
 }

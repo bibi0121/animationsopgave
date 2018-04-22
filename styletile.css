@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(192, 247, 211);
+}
+
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(0, 96, 11);
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding-left: 100px;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 20px
+}
+
+li a:hover {
+    background-color: rgba(14, 80, 34, 0.58);
+}
+
+
+h1 {
+    font-family: "open sans";
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "open sans";
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "open sans";
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+p {
+    font-family: "open sans";
+    font-size: 1em;
+    font-weight: lighter
+}
+
+img {
+    width: 60vw;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionwrapper .column {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+    box-shadow: 5px 5px;
+    border: 1px solid;
+
+    margin: 10px;
+    text-align: center;
+}
+
+.sectionwrapper .column_1 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+}
+
+.sectionwrapper .column_2 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.sectionwrapper .column_3 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+/*Forsiden*/
+
+.column_content {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.column_content .animation {
+    font-family: "open sans";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.column_content .styletile {
+    font-family: "open sans";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.column_content1 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+}
+
+.column_content1 img {
+    width: 70%;
+}
+
+
